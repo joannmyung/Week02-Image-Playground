@@ -10,9 +10,6 @@ func imageFor(_ str: String) -> UIImage {
     return uiImage!
 }
 
-// profile image
-let u1 = "https://lh3.googleusercontent.com/a/AEdFTp6gdANzhWmT2dZ69WP2UB5edH-_ZitKIkD0Cwks=s80"
-let ui1 = imageFor(u1)
 
 // itp staff
 let u2 = "https://i.ibb.co/QkWvC7g/1024.jpg"
@@ -22,7 +19,7 @@ let sz = CGSize(width: 1024, height: 1024)
 let renderer = UIGraphicsImageRenderer(size: sz)
 
 let image = renderer.image { (context) in
-    ui1.draw(in: CGRect(x: 0, y: 0, width: 100, height: 100))
+
     ui2.draw(in: CGRect(x: 0, y: 0, width: 1024, height: 1024))
 
 }
