@@ -18,12 +18,12 @@ let ui1 = imageFor(u1)
 let u2 = "https://i.ibb.co/QkWvC7g/1024.jpg"
 let ui2 = imageFor(u2)
 
-let sz = CGSize(width: 200, height: 200)
+let sz = CGSize(width: 1024, height: 1024)
 let renderer = UIGraphicsImageRenderer(size: sz)
 
 let image = renderer.image { (context) in
     ui1.draw(in: CGRect(x: 0, y: 0, width: 100, height: 100))
-    ui2.draw(in: CGRect(x: 100, y: 0, width: 1024, height: 1024))
+    ui2.draw(in: CGRect(x: 0, y: 0, width: 1024, height: 1024))
 
 }
 
